@@ -1,0 +1,166 @@
+:root {
+    --header-color: #14199e;
+    --header-hight: 70px;
+    --header-text-color: #e0dcda;
+    --border-header: rgb(47, 38, 78);
+    --header-text-color-hover: #a0897e;
+    --color-1: #ffff;
+    --red-color-1: #d2332c;
+    --black-color-1: #e0dcda;
+    --red-color-2: #6b1f1b;
+    --border-color_1: #f1f1f1;
+    --text-color_1: #0f1274;
+    --text-color_2: #868484;
+    --text-color_3: #2c2b2b;
+    --text-color_4: #e0dcda;
+    --text-color_5: rgb(247, 238, 238);
+}
+
+* {
+    box-sizing: inherit;
+    /*kế thừa box-sizing: boder-bõ*/
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+input,
+button,
+option,
+textarea,
+label,
+select,
+legend,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    /* font: 14px/18px Arial,Helvetica,sans-serif; */
+    color: #333;
+    outline: none;
+}
+
+html {
+    /* 10px */
+    /* 1rem  = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* = boder+padding */
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+
+/* animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeScale {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 5px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5rem;
+}
+
+
+/* pagination---------------- */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 12px;
+}
+
+.pagination-item_active a {
+    background-color: red;
+    color: var(--white-color);
+}
+
+.pagination-item_active a:hover {
+    color: var(--white-color);
+}
+
+.pagination-link {
+    display: block;
+    height: 30px;
+    min-height: 20px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+}
+
+.pagination-link:hover {
+    text-decoration: none;
+    color: var(--text-color);
+}
