@@ -6,6 +6,9 @@
     z-index: 10;
     top: 0;
 }
+.box_content{
+    background-color: var(--color-3);
+}
 
 .header_body {
     display: flex;
@@ -201,6 +204,7 @@
     height: 415px;
     border: 1px solid var(--border-color_1);
     list-style: none;
+    background-color: var(--color-1);
 }
 
 .box-item_img {
