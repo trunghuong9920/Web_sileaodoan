@@ -5,6 +5,7 @@
     --border-header: rgb(47, 38, 78);
     --header-text-color-hover: #a0897e;
     --color-1: #ffff;
+    --color-2: rgb(197, 194, 194);
     --red-color-1: #d2332c;
     --black-color-1: #e0dcda;
     --red-color-2: #6b1f1b;
@@ -138,11 +139,11 @@ button:focus {
 
 .pagination-item_active a {
     background-color: red;
-    color: var(--white-color);
+    color: white;
 }
 
 .pagination-item_active a:hover {
-    color: var(--white-color);
+    color: white;
 }
 
 .pagination-link {
@@ -154,13 +155,13 @@ button:focus {
     font-weight: 300;
     color: #939393;
     min-width: 40px;
-    height: var(--height);
+    height: 2.8rem;
     text-align: center;
-    line-height: var(--height);
+    line-height: 2.8rem;
     border-radius: 2px;
 }
 
 .pagination-link:hover {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-color_3);
 }

@@ -4,6 +4,7 @@
     height: var(--header-hight);
     position: fixed;
     z-index: 10;
+    top: 0;
 }
 
 .header_body {
